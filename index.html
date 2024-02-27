@@ -151,11 +151,15 @@
         <img class="contact-section__img" src="./img/opacidad_50_800.png" alt="">
         <div class="contact-form">
           <h4>Conéctate conmigo...</h4>
-          <form class="form-group">
-            <input type="text" placeholder="Name" class="input">
-            <input type="email" placeholder="Email" class="input">
+          <form action="https://formsubmit.co/b2fe99ec2be25821ee510ad5fc889d8d" method="POST" class="form-group">
+            <input type="text" name="name" placeholder="Name" class="input">
+            <input type="email" name="email" placeholder="Email" class="input">
             <textarea name="message" placeholder="Place your message here..."></textarea>
-            <button type="submit" class="btn-submit">Enviar mensaje</button>
+            <!-- <button type="submit" class="btn-submit">Enviar mensaje</button> -->
+            <input type="submit" class="btn-submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+            <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
       </div>
